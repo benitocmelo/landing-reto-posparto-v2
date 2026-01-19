@@ -37,19 +37,21 @@ const Hero: React.FC = () => {
         {/* VSL Widget */}
         <div className="relative w-full max-w-3xl aspect-video bg-forest rounded-2xl shadow-2xl shadow-lime/20 border-4 border-white/50 animate-float mb-12 group overflow-hidden">
            {/* Tablet Frame Glare */}
-           <div className="absolute inset-0 pointer-events-none rounded-xl ring-1 ring-inset ring-white/20"></div>
+           <div className="absolute inset-0 pointer-events-none rounded-xl ring-1 ring-inset ring-white/20 z-20"></div>
            
            <video 
              src={ASSETS.vsl}
-             className="w-full h-full object-cover rounded-xl"
+             className="w-full h-full object-cover rounded-xl relative z-10"
              autoPlay
              muted
              loop
              playsInline
+             controls
              poster={ASSETS.imgPain} // Fallback
            />
            
-           <div className="absolute bottom-4 right-4 bg-black/60 backdrop-blur px-3 py-1 rounded-full text-white text-xs flex items-center gap-1">
+           {/* Badge moved to top to avoid overlapping native controls */}
+           <div className="absolute top-4 right-4 bg-black/60 backdrop-blur px-3 py-1 rounded-full text-white text-xs flex items-center gap-1 z-30 pointer-events-none">
              <Play size={12} fill="white" /> VSL ACTIVADO
            </div>
         </div>
