@@ -14,19 +14,15 @@ const PainAgitation: React.FC = () => {
           </div>
           
           <h2 className="font-display text-3xl md:text-4xl font-bold text-forest mb-6">
-            ¿Te miras al espejo y no te reconoces?
+            ¿Cansada de la barriga que no baja con nada?
           </h2>
           
           <div className="space-y-4 text-forest/80 text-lg leading-relaxed">
             <p>
-              Sé exactamente cómo te sientes. Ese momento en el que sales de la ducha, miras tu abdomen y sientes un vacío. 
-              <span className="font-semibold text-coral"> No es solo estética.</span>
+              Haces abdominales, pruebas dietas y nada funciona. No es tu culpa. Tu 'corsé interno' está debilitado.
             </p>
             <p>
-              Son los escapes de orina al reír. Es el dolor de espalda al cargar a tu bebé. Es la culpa de sentir que tu cuerpo "te falló".
-            </p>
-            <p className="font-medium italic border-l-2 border-forest/20 pl-4">
-              "Todo el mundo me dice que disfrute a mi bebé, pero nadie me dijo que me sentiría atrapada en un cuerpo que no es el mío."
+              Los ejercicios tradicionales solo te inflaman más. Necesitas una solución inteligente que se adapte a tu falta de tiempo.
             </p>
           </div>
 

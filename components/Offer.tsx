@@ -15,7 +15,7 @@ const Offer: React.FC = () => {
           <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-2">
             TU CAJA FUERTE DE <span className="text-lime">TRANSFORMACIÓN</span>
           </h2>
-          <p className="text-white/60">Todo lo que necesitas, en un solo lugar.</p>
+          <p className="text-white/60">Tu Faja Natural activada de por vida por menos de lo que cuesta una cena.</p>
         </div>
 
         {/* Carousel Preview */}

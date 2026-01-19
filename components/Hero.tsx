@@ -14,15 +14,15 @@ const Hero: React.FC = () => {
         {/* Pre-headline */}
         <div className="inline-block mb-4 px-4 py-1 bg-coral/10 rounded-full border border-coral/20">
           <p className="text-coral font-bold text-xs md:text-sm tracking-wider uppercase">
-            ⚠️ ATENCIÓN MAMÁ: ¿Sientes que tu cuerpo ya no es el mismo?
+            ⏱️ SOLO 5 MINUTOS AL DÍA
           </p>
         </div>
 
         {/* Headline */}
         <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-forest">
-          RECUPERA TU CUERPO EN <br/>
+          REDUCE CINTURA Y APLANA TU ABDOMEN <br/>
           <span className="relative inline-block mt-2">
-            <span className="relative z-10">SOLO 21 DÍAS</span>
+            <span className="relative z-10">DESDE CASA</span>
             <svg className="absolute -bottom-2 left-0 w-full h-3 text-lime" viewBox="0 0 100 10" preserveAspectRatio="none">
               <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="4" fill="none" />
             </svg>
@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
 
         {/* Sub-headline */}
         <p className="text-forest/80 text-lg md:text-xl mb-10 max-w-2xl leading-relaxed">
-          Sin dietas extremas ni horas en el gimnasio. El método científico diseñado para la biología de la mamá moderna.
+          Olvídate del gimnasio y las dietas estrictas. Activa tu "Faja Interna" natural con ejercicios de respiración simples y recupera tu figura sin sacrificios.
         </p>
 
         {/* VSL Widget */}
@@ -58,7 +58,7 @@ const Hero: React.FC = () => {
 
         {/* CTA */}
         <BiotechButton 
-          text="👉 SÍ, QUIERO RECUPERAR MI CUERPO AHORA"
+          text="QUIERO ACTIVAR MI FAJA AHORA >>"
           variant="primary"
           className="w-full md:w-auto min-w-[320px]"
           onClick={() => document.getElementById('offer')?.scrollIntoView({ behavior: 'smooth' })}

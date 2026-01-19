@@ -10,10 +10,10 @@ const Solution: React.FC = () => {
         <div className="text-center mb-16">
           <span className="text-lime font-bold tracking-widest uppercase text-sm mb-2 block">Biotech Maternal System</span>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-forest inline-flex items-center gap-2">
-            <Sparkles className="text-lime fill-lime" /> EL RETO 21 DÍAS <Sparkles className="text-lime fill-lime" />
+            <Sparkles className="text-lime fill-lime" /> EL SECRETO: RESPIRACIÓN HIPOPRESIVA <Sparkles className="text-lime fill-lime" />
           </h2>
-          <p className="mt-4 text-forest/70 max-w-2xl mx-auto">
-            La fusión perfecta entre ciencia de recuperación de tejidos y movimiento consciente.
+          <p className="mt-4 text-forest/70 max-w-2xl mx-auto text-lg">
+            No necesitas sudar horas en el gimnasio. Al activar tu músculo transverso con nuestra técnica de respiración, generas un efecto de succión (vacío) que reduce centímetros de cintura automáticamente mientras mejoras tu postura.
           </p>
         </div>
 
@@ -67,7 +67,7 @@ const Solution: React.FC = () => {
              </div>
              <h3 className="text-xl font-bold mb-4 text-forest">Método Reto 21 Días</h3>
              <ul className="space-y-3">
-               {['Cierre de Diastasis', 'Suelo Pélvico Blindado', 'Cintura Reducida', 'Confianza Absoluta'].map((item, i) => (
+               {['Cintura más pequeña en semanas', 'Sin saltos ni impacto (Ideal Postparto)', 'Alivia el dolor de espalda al instante'].map((item, i) => (
                  <li key={i} className="flex gap-2 items-center font-medium text-forest">
                    <CheckCircle2 size={20} className="text-lime fill-lime/20" /> {item}
                  </li>
