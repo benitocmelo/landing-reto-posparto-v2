@@ -4,6 +4,20 @@ import BiotechButton from './ui/BiotechButton';
 import { CheckCircle2, Lock } from 'lucide-react';
 
 const Offer: React.FC = () => {
+  const handleBuyClick = () => {
+    // @ts-ignore
+    if (typeof window.fbq === 'function') {
+      // @ts-ignore
+      window.fbq('track', 'AddToCart', {
+        content_name: 'Reto Posparto 21 Días',
+        value: 39.99,
+        currency: 'USD',
+        content_type: 'product'
+      });
+      console.log("🛒 Evento AddToCart enviado al Pixel");
+    }
+  };
+
   return (
     <section id="offer" className="py-24 px-4 bg-forest text-cream relative overflow-hidden">
       {/* Background Tech Elements */}
@@ -67,7 +81,10 @@ const Offer: React.FC = () => {
             text="DESBLOQUEAR ACCESO COMPLETO 🔓" 
             fullWidth 
             className="mb-8 text-xl md:text-2xl py-6 shadow-[0_0_30px_rgba(163,230,53,0.3)]"
-            onClick={() => window.open(CHECKOUT_URL, '_blank')}
+            onClick={() => {
+              handleBuyClick();
+              window.open(CHECKOUT_URL, '_blank');
+            }}
           />
 
           <div className="flex flex-col items-center gap-4">

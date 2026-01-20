@@ -4,6 +4,20 @@ import BiotechButton from './ui/BiotechButton';
 import { Play } from 'lucide-react';
 
 const Hero: React.FC = () => {
+  const handleBuyClick = () => {
+    // @ts-ignore
+    if (typeof window.fbq === 'function') {
+      // @ts-ignore
+      window.fbq('track', 'AddToCart', {
+        content_name: 'Reto Posparto 21 Días',
+        value: 39.99,
+        currency: 'USD',
+        content_type: 'product'
+      });
+      console.log("🛒 Evento AddToCart enviado al Pixel");
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex flex-col items-center pt-12 pb-20 px-4 overflow-hidden">
       {/* Ambient Blobs */}
@@ -61,7 +75,10 @@ const Hero: React.FC = () => {
           text="QUIERO ACTIVAR MI FAJA AHORA >>"
           variant="primary"
           className="w-full md:w-auto min-w-[320px]"
-          onClick={() => document.getElementById('offer')?.scrollIntoView({ behavior: 'smooth' })}
+          onClick={() => {
+            handleBuyClick();
+            document.getElementById('offer')?.scrollIntoView({ behavior: 'smooth' });
+          }}
         />
         
         <p className="mt-4 text-sm text-forest/60">
